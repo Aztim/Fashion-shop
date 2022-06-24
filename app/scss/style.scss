@@ -1,5 +1,14 @@
 @import 'vars';
 @import 'fonts';
 @import 'global';
+
+.header {
+  padding: 40px 0;
+  &__inner{
+    display: flex;
+    justify-content: space-between;
+  }
+};
+
 @import 'media';
 @import 'reset';

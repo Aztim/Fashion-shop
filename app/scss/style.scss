@@ -10,5 +10,27 @@
   }
 };
 
+.menu {
+  &__list{
+    display: flex;
+  }
+  &__list-item + .menu__list-item {
+    padding-left: 35px;
+  }
+  &__list-link {
+    color: $title;
+    padding-bottom: 1px;
+    transition: all .3s;
+    &:hover{
+      color: $accent;
+      border-bottom: 1px solid $accent;
+    }
+  }
+  &__list-link--active {
+    color: $accent;
+    border-bottom: 1px solid $accent;
+  }
+}
+
 @import 'media';
 @import 'reset';
